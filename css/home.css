@@ -1,0 +1,234 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgba(0, 0, 255, 0.171);
+}
+
+h1 {
+  color: #ccc;
+  font-weight: 300;
+}
+
+.content article {
+  padding: 100px 0;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1{
+  color: rgba(65, 105, 225, 0.336);
+}
+
+/*Parallax*/
+
+.bird-box {
+  position: relative;
+  height: 300px;
+  background-color: royalblue;
+ 
+  background-image: url(https://bit.ly/2Z1Dlat);
+  background-repeat: no-repeat;
+  size: contain;
+  position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.logo {
+  height: 36%;
+  width: 15%;
+  text-align: center;
+  position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  margin-top: -50px;
+}
+
+/*image fade in*/
+.column {
+  float: left;
+  padding: 0px;
+}
+.product-pics{
+  margin-left: 4%;
+}
+/*price effect*/
+.column  img{
+  width: 100%;
+  height: 224px;
+  width: 225px;
+  padding: 7px;
+  display: block;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.column  img:hover {
+  transform: scale(1.1)
+}      
+figcaption{
+    position: absolute;
+    bottom: 10px;
+    left: -97%;
+    background: black;
+    color: white;
+    padding: 2px 8px;
+    font-size: 11px;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  strong{
+    display: block;
+    font-size: 30px;
+  }
+  /*window effect*/
+.large-window{
+  height: 640px;
+  background-image: url("https://dailym.ai/2D715jY");
+  background-size: contain;
+  background-position:center;
+    position: center 0px;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 50%;
+  position: relative;
+}
+.window-tint{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+  .promo-text{
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 1.2;
+   
+      
+  }
+    .promo-text strong{
+        display: block;
+        font-size: 30px;
+    }
+    .prom-text span{
+      font-weight: 300;
+        size: 18px;
+      color: rgba(255,255,255,0.6);
+    }
+    .window-cta{
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      padding: 10px 20px;
+      transition: all 0.3s ease-in-out;
+    }
+      .window-cta:hover{
+        background: white;
+        color: black;
+      }
+/*posts
+
+.blog-posts{
+  margin-top: 100px;
+}
+  .post{
+    border: 1px solid #e1e1e1;
+    padding:  0;
+    background: white;
+    position: relative;
+  }*/
+  .abt-pics {
+    padding: 0px;
+    margin-bottom: 100px;
+  }
+  .pics{
+    float: left;
+  }
+/*image fade in*/
+ figure{
+    margin-bottom: 20px;
+    position: relative;
+    opacity: 1;
+    transform: translateX(20px);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+.is-showing{
+      opacity: 2;
+      transform: translateX(0px);
+}
+/* flip*/
+.container1{
+  top: 10%;
+  left: 10%;
+  transform: translate(-50% -50%);
+}
+ul.thumb{
+  margin: auto;
+  padding: 0;
+  float: left;
+}
+ul.thumb li{
+  list-style: none;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border:1px solid rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+ul.thumb li img{
+  width: 100%;
+  height: 100%;
+}
+.imgBox{
+  float: left;
+}
+.imgBox img{
+  width: 400px;
+  max-height: 400px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #0088cc;
+  margin-bottom: 4%;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #0088cc;
+  color: white;
+}
+.siize{
+  font-size: 20px;
+  color: black;
+  font-style: italic;
+}
+#color{
+  color: black;
+}
