@@ -14,7 +14,7 @@ body{
     z-index: 1;
 }
 .circle:nth-child(1){
-    background:url("https://bit.ly/2P5GNw8");
+    background:url("ima");
     background-attachment: fixed;
     clip-path: circle(100px at 0 0);
 }
@@ -89,4 +89,46 @@ clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
 .box h1:nth-child(1):hover ~ h1{
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
 clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
+}
+
+a
+{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%) perspective(500px);
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	text-shadow: 6px 3px 2px rgba(0,0,0,.2);
+	background: linear-gradient(90deg, #3603ff, #a41ee9);
+	color: #fff;
+	text-decoration: none;
+	border-radius: 25px;
+	letter-spacing: 1px;
+	transition: .5s;
+	overflow: hidden;
+	box-shadow: 0 0 0 5px rgba(0,0,0,.2);
+}
+a:hover
+{
+	transform: translate(-50%,-50%) perspective(500px);
+	text-shadow: -6px 3px 2px rgba(0,0,0,.2);
+}
+a:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, transparent, #fff, transparent);
+	transition: .5s;
+}
+a:hover:before
+{
+	left: 100%;
 }

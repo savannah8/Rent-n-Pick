@@ -232,3 +232,11 @@ ul.thumb li img{
 #color{
   color: black;
 }
+#text{
+  font-size: 60px;
+}
+.page-footer{
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  width: 1336px;
+  height: 270px:
+}
